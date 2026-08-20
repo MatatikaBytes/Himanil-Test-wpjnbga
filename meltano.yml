@@ -6,6 +6,10 @@ environments:
 - name: staging
 - name: prod
 plugins:
+  extractors:
+  - name: tap-zendesk
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-zendesk@v0.1.0
   loaders:
   - name: target-postgres
     variant: matatika
